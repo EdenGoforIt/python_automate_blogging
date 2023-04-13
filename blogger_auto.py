@@ -4,12 +4,13 @@ from selenium.webdriver.common.action_chains import ActionChains
 
 import time
 import openai
+import api_key
 
 # FIXME: delete the key
-
 # openai.api_key = 'enter the key here'
+openai.api_key = api_key.token
 
-dish ='sushi'
+dish = 'sushi'
 
 questions = f'give me a list of famous Japanese dishes called {dish}'
 
